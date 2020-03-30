@@ -17,7 +17,7 @@ $con = mysqli_connect('127.0.0.1', 'root', '', 'lab');
 		$sql = "Insert into user values('{$name}','{$pass}','{$mail}','{$type}')";
 			
 			if(mysqli_query($con, $sql)){
-		echo "fuck";
+		header("location: ../index.html");
 		}
 		else{
 		echo "Error";
